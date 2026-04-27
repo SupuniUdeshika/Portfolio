@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Supuni Udeshika</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <style>
@@ -44,7 +47,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: 
+            background:
                 radial-gradient(circle at 20% 30%, rgba(138, 43, 226, 0.15) 0%, transparent 40%),
                 radial-gradient(circle at 80% 70%, rgba(0, 188, 212, 0.15) 0%, transparent 40%);
             z-index: -1;
@@ -168,8 +171,15 @@
         }
 
         @keyframes blink {
-            0%, 100% { border-color: var(--secondary); }
-            50% { border-color: transparent; }
+
+            0%,
+            100% {
+                border-color: var(--secondary);
+            }
+
+            50% {
+                border-color: transparent;
+            }
         }
 
         .btn {
@@ -377,8 +387,13 @@
         }
 
         @keyframes shine {
-            0% { transform: translateX(-100%); }
-            100% { transform: translateX(100%); }
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         .about-image {
@@ -397,8 +412,13 @@
         }
 
         @keyframes rotate {
-            from { transform: rotateX(30deg) rotateY(0); }
-            to { transform: rotateX(30deg) rotateY(360deg); }
+            from {
+                transform: rotateX(30deg) rotateY(0);
+            }
+
+            to {
+                transform: rotateX(30deg) rotateY(360deg);
+            }
         }
 
         .cube {
@@ -433,23 +453,51 @@
         }
 
         @keyframes float1 {
-            0%, 100% { transform: translateY(0) rotate(0); }
-            50% { transform: translateY(-20px) rotate(10deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-20px) rotate(10deg);
+            }
         }
 
         @keyframes float2 {
-            0%, 100% { transform: translateY(0) rotate(0); }
-            50% { transform: translateY(20px) rotate(-10deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(20px) rotate(-10deg);
+            }
         }
 
         @keyframes float3 {
-            0%, 100% { transform: translateY(0) rotate(0); }
-            50% { transform: translateY(15px) rotate(5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(15px) rotate(5deg);
+            }
         }
 
         @keyframes float4 {
-            0%, 100% { transform: translateY(0) rotate(0); }
-            50% { transform: translateY(-15px) rotate(-5deg); }
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(0);
+            }
+
+            50% {
+                transform: translateY(-15px) rotate(-5deg);
+            }
         }
 
         .cube-face {
@@ -466,12 +514,29 @@
             backdrop-filter: blur(5px);
         }
 
-        .front { transform: translateZ(50px); }
-        .back { transform: translateZ(-50px) rotateY(180deg); }
-        .right { transform: translateX(50px) rotateY(90deg); }
-        .left { transform: translateX(-50px) rotateY(-90deg); }
-        .top { transform: translateY(-50px) rotateX(90deg); }
-        .bottom { transform: translateY(50px) rotateX(-90deg); }
+        .front {
+            transform: translateZ(50px);
+        }
+
+        .back {
+            transform: translateZ(-50px) rotateY(180deg);
+        }
+
+        .right {
+            transform: translateX(50px) rotateY(90deg);
+        }
+
+        .left {
+            transform: translateX(-50px) rotateY(-90deg);
+        }
+
+        .top {
+            transform: translateY(-50px) rotateX(90deg);
+        }
+
+        .bottom {
+            transform: translateY(50px) rotateX(-90deg);
+        }
 
         /* Experience & Education */
         .timeline {
@@ -774,7 +839,9 @@
         }
 
         @keyframes spin {
-            to { transform: rotate(360deg); }
+            to {
+                transform: rotate(360deg);
+            }
         }
 
         /* Responsive Design */
@@ -783,38 +850,38 @@
                 flex-direction: column;
                 text-align: center;
             }
-            
+
             .hero-text {
                 padding-right: 0;
                 margin-bottom: 50px;
             }
-            
+
             .about-content {
                 flex-direction: column;
             }
-            
+
             .contact-content {
                 flex-direction: column;
             }
-            
+
             .timeline::after {
                 left: 31px;
             }
-            
+
             .timeline-item {
                 width: 100%;
                 padding-left: 70px;
                 padding-right: 25px;
             }
-            
+
             .timeline-item:nth-child(even) {
                 left: 0;
             }
-            
+
             .timeline-item::after {
                 left: 18px;
             }
-            
+
             .timeline-item:nth-child(odd)::after {
                 right: auto;
             }
@@ -824,17 +891,18 @@
             .nav-links {
                 display: none;
             }
-            
+
             .hero-text h1 {
                 font-size: 2.5rem;
             }
-            
+
             .projects-grid {
                 grid-template-columns: 1fr;
             }
         }
     </style>
 </head>
+
 <body>
     <!-- Header & Navigation -->
     <header>
@@ -859,25 +927,30 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Software <span>Engineer</span></h1>
-                    <p>I design and develop exceptional digital experiences that make an impact on people's lives. Currently specializing in building responsive web applications with modern technologies.</p>
+                    <p>I design and develop exceptional digital experiences that make an impact on people's lives.
+                        Currently specializing in building responsive web applications with modern technologies.</p>
                     <p class="typing-text">Passionate about clean code and innovative solutions</p>
                     <div style="margin-top: 30px;">
                         <a href="#contact" class="btn">Hire Me</a>
-                        <a href="asset/Supuni_Udeshika_CV.pdf" class="btn btn-outline" download="Supuni_Udeshika_CV.pdf">Download CV</a>
+                        <a href="asset/Supuni_Udeshika_CV.pdf" class="btn btn-outline"
+                            download="Supuni_Udeshika_CV.pdf">Download CV</a>
                     </div>
                 </div>
                 <div class="hero-image">
                     <div class="profile-card">
                         <div class="profile-img">
-                            <img src="./asset/sample.jpg" alt="Profile Image">
+                            <img src="./asset/su.jpg" alt="Profile Image">
                         </div>
                         <div class="profile-info">
                             <h2>Supuni Udeshika</h2>
                             <p>Software Engineer</p>
                             <div class="social-links">
-                                <a href="https://github.com/SupuniUdeshika" class="social-link"><i class="fab fa-github"></i></a>
-                                <a href="https://www.linkedin.com/in/supuni-udeshika-51a6ba2a4/" class="social-link"><i class="fab fa-linkedin"></i></a>
-                                <a href="https://wa.me/+94760847704" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                                <a href="https://github.com/SupuniUdeshika" class="social-link"><i
+                                        class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/supuni-udeshika-51a6ba2a4/" class="social-link"><i
+                                        class="fab fa-linkedin"></i></a>
+                                <a href="https://wa.me/+94760847704" class="social-link"><i
+                                        class="fab fa-whatsapp"></i></a>
                             </div>
                         </div>
                     </div>
@@ -895,9 +968,15 @@
             <div class="about-content">
                 <div class="about-text">
                     <h3>I create products that are more than just usable</h3>
-                    <p>Hello! I'm Supuni, an undergraduate software engineering student at Cardiff Metropolitan University, passionate about building exceptional websites, applications, and digital solutions.</p>
-                    <p>I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. My goal is to always build products that deliver clean code, pixel-perfect design, and high performance.</p>
-                    <p>Through my academic journey and industry exposure, I have developed a strong interest in full-stack development, Power Platform solutions, and emerging technologies, while continuously seeking opportunities to grow and contribute to meaningful projects.</p>
+                    <p>Hello! I'm Supuni, an undergraduate software engineering student at Cardiff Metropolitan
+                        University, passionate about building exceptional websites, applications, and digital solutions.
+                    </p>
+                    <p>I enjoy creating things that live on the internet, whether that be websites, applications, or
+                        anything in between. My goal is to always build products that deliver clean code, pixel-perfect
+                        design, and high performance.</p>
+                    <p>Through my academic journey and industry exposure, I have developed a strong interest in
+                        full-stack development, Power Platform solutions, and emerging technologies, while continuously
+                        seeking opportunities to grow and contribute to meaningful projects.</p>
 
                     <div class="skills">
                         <a href="#" class="btn btn-outline">C++</a>
@@ -909,7 +988,7 @@
                         <a href="#" class="btn btn-outline">UI/UX Design</a>
                     </div>
                 </div>
-                
+
                 <div class="about-image">
                     <div class="floating-cubes">
                         <div class="cube">
@@ -962,7 +1041,9 @@
                         <div class="timeline-date">2024 - 2025</div>
                         <h3 class="timeline-title">Intern - Autonomation Department</h3>
                         <p>MAS Intimates Slimline-Pannala</p>
-                        <p>Create and manage apps with Power Apps and Power BI, design user-friendly forms, automate workflows, enhance apps with Power Platform, implement CI/CD pipelines, and develop IoT solutions for real-time data collection.</p>
+                        <p>Create and manage apps with Power Apps and Power BI, design user-friendly forms, automate
+                            workflows, enhance apps with Power Platform, implement CI/CD pipelines, and develop IoT
+                            solutions for real-time data collection.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -970,7 +1051,8 @@
                         <div class="timeline-date">2022 - 2024</div>
                         <h3 class="timeline-title">Computer Assistant</h3>
                         <p>Samudri Bank - Dandagamuwa</p>
-                        <p>Managed banking databases, handled account creation and report preparation, and ensured data accuracy for smooth daily banking operations.</p>
+                        <p>Managed banking databases, handled account creation and report preparation, and ensured data
+                            accuracy for smooth daily banking operations.</p>
                     </div>
                 </div>
             </div>
@@ -987,9 +1069,12 @@
                 <div class="timeline-item">
                     <div class="timeline-content">
                         <div class="timeline-date">2025 - Present</div>
-                        <h3 class="timeline-title">Bachelor of Science in Software Engineering (Hons)(Undergraduate)</h3>
+                        <h3 class="timeline-title">Bachelor of Science in Software Engineering (Hons)(Undergraduate)
+                        </h3>
                         <p>Cardiff Metropolitan University</p>
-                        <p>Currently pursuing a degree in software engineering, gaining experience across all aspects of software development, including web and mobile applications, software design, system implementation, and machine learning.</p>
+                        <p>Currently pursuing a degree in software engineering, gaining experience across all aspects of
+                            software development, including web and mobile applications, software design, system
+                            implementation, and machine learning.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -997,7 +1082,8 @@
                         <div class="timeline-date">2023 - 2024</div>
                         <h3 class="timeline-title">Higher Diploma in Computing & Software Engineering</h3>
                         <p>Cardiff Metropolitan University</p>
-                        <p>Completed a Higher Diploma with a strong foundation in computing, mathematics, and science, covering core concepts in software development, algorithms, and data analysis.</p>
+                        <p>Completed a Higher Diploma with a strong foundation in computing, mathematics, and science,
+                            covering core concepts in software development, algorithms, and data analysis.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1005,7 +1091,8 @@
                         <div class="timeline-date">2023 - 2024</div>
                         <h3 class="timeline-title">Diploma in English Language</h3>
                         <p>ESoft Metropolitan College</p>
-                        <p>Completed a diploma in English, enhancing communication, writing, and professional language skills.</p>
+                        <p>Completed a diploma in English, enhancing communication, writing, and professional language
+                            skills.</p>
                     </div>
                 </div>
                 <div class="timeline-item">
@@ -1029,11 +1116,34 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-img">
+                        <img src="asset/aitravelcompanion.png" alt="AI Travel Companion">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">AI - Travel Companion (Final Year Project)</h3>
+                        <p class="project-desc">An AI-based Android mobile app that serves as a smart travel companion,
+                            featuring ML-powered recommendations, real-time map navigation, and an intelligent chatbot
+                            powered by Gemini API for personalized travel assistance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">Google Maps API</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Firebase</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/SupuniUdeshika/Ai_Travel_Companion" class="btn">Code</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-img">
                         <img src="asset/pahanaedulogin.png">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Book Shop Management System</h3>
-                        <p class="project-desc">A web-based book shop management system for managing books, inventory, sales, billing, and customer records efficiently.</p>
+                        <p class="project-desc">A web-based book shop management system for managing books, inventory,
+                            sales, billing, and customer records efficiently.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">HTML</span>
@@ -1051,7 +1161,8 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Smart School Automation with IOT</h3>
-                        <p class="project-desc">An IoT-powered school automation system with NFC-based attendance tracking, academic record management, and real-time parent–teacher communication.</p>
+                        <p class="project-desc">An IoT-powered school automation system with NFC-based attendance
+                            tracking, academic record management, and real-time parent–teacher communication.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">C#</span>
@@ -1068,7 +1179,8 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Pet Care App (Doggy)</h3>
-                        <p class="project-desc">A mobile app for managing pet care, including tracking and organizing daily needs for dogs.</p>
+                        <p class="project-desc">A mobile app for managing pet care, including tracking and organizing
+                            daily needs for dogs.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">XML</span>
@@ -1085,7 +1197,8 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">TechFix (Computer Shop)</h3>
-                        <p class="project-desc">A service-oriented application for a computer shop, featuring product management, procurement, and customer services.</p>
+                        <p class="project-desc">A service-oriented application for a computer shop, featuring product
+                            management, procurement, and customer services.</p>
                         <div class="project-tech">
                             <span class="tech-tag">ASP.Net</span>
                             <span class="tech-tag">C#</span>
@@ -1103,7 +1216,8 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">GalleryCafe (Restaurant)</h3>
-                        <p class="project-desc">A dynamic restaurant website with online menu browsing and customer-friendly features.</p>
+                        <p class="project-desc">A dynamic restaurant website with online menu browsing and
+                            customer-friendly features.</p>
                         <div class="project-tech">
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
@@ -1117,13 +1231,14 @@
                     </div>
                 </div>
 
-            <div class="project-card">
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/slimstat.jpg" alt="Data Visualization">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">SlimStat</h3>
-                        <p class="project-desc">A mobile app for tracking machine utilization, submitting line-wise status updates, and reporting breakdown or parked machines for process improvement.</p>
+                        <p class="project-desc">A mobile app for tracking machine utilization, submitting line-wise
+                            status updates, and reporting breakdown or parked machines for process improvement.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Java</span>
                             <span class="tech-tag">XML</span>
@@ -1135,13 +1250,15 @@
                     </div>
                 </div>
 
-                         <div class="project-card">
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/testtechauto.png">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">TESTTECHAUTO</h3>
-                        <p class="project-desc">A Power App solution that standardizes and digitizes the plant attachment and stencil pattern verification process, ensuring accuracy and workflow automation for the Autonomation Department.</p>
+                        <p class="project-desc">A Power App solution that standardizes and digitizes the plant
+                            attachment and stencil pattern verification process, ensuring accuracy and workflow
+                            automation for the Autonomation Department.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power App</span>
                             <span class="tech-tag">Power FX</span>
@@ -1150,16 +1267,17 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div> 
 
-                  <div class="project-card">
+                </div>
+
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/pressurecalc.png" alt="Data Visualization">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">PressureCalc App</h3>
-                        <p class="project-desc">A Power App-based pressure calculator designed for precise heat-seal machine adjustments, optimized specifically for SKIMS-style production requirements.</p>
+                        <p class="project-desc">A Power App-based pressure calculator designed for precise heat-seal
+                            machine adjustments, optimized specifically for SKIMS-style production requirements.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power App</span>
                             <span class="tech-tag">Power FX</span>
@@ -1168,16 +1286,18 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div>  
 
-                 <div class="project-card">
+                </div>
+
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/ctqctpapp.jpg" alt="Data Visualization">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">CTP & CTQ Data Entry App</h3>
-                        <p class="project-desc">A Power App for recording CTQ and CTP checkpoints per style across the plant, allowing users to add, edit, and delete entries while providing real-time visibility through an integrated dashboard.</p>
+                        <p class="project-desc">A Power App for recording CTQ and CTP checkpoints per style across the
+                            plant, allowing users to add, edit, and delete entries while providing real-time visibility
+                            through an integrated dashboard.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power App</span>
                             <span class="tech-tag">Power FX</span>
@@ -1187,17 +1307,19 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div> 
+
+                </div>
 
 
-                 <div class="project-card">
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/prefinalfails.png">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Pre Final Fails Dashboard</h3>
-                        <p class="project-desc">A Power BI-based Dashboard that enables the Quality Department to analyze plant-wise defect trends with filters for shift, section, and responsible person, supported by visual summaries and key failure/defect counts.</p>
+                        <p class="project-desc">A Power BI-based Dashboard that enables the Quality Department to
+                            analyze plant-wise defect trends with filters for shift, section, and responsible person,
+                            supported by visual summaries and key failure/defect counts.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power BI</span>
                             <span class="tech-tag">DAX</span>
@@ -1206,18 +1328,20 @@
                         </div>
                         <div class="project-links">
                         </div>
-                    </div>  
-                   
-                </div> 
+                    </div>
+
+                </div>
 
 
-                    <div class="project-card">
+                <div class="project-card">
                     <div class="project-img">
                         <img src="asset/styleoptimizationtracker.jpg">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">NPI Style Optimization Tracker</h3>
-                        <p class="project-desc">A Power BI-based dashboard that visualizes error-proofing levels with interactive graphs, displays garment image and chassis code, and tracks solution counts by chassis code upon style selection.</p>
+                        <p class="project-desc">A Power BI-based dashboard that visualizes error-proofing levels with
+                            interactive graphs, displays garment image and chassis code, and tracks solution counts by
+                            chassis code upon style selection.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power BI</span>
                             <span class="tech-tag">DAX</span>
@@ -1227,8 +1351,8 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div> 
+
+                </div>
 
 
                 <div class="project-card">
@@ -1237,9 +1361,10 @@
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">CTQ & CTP Analysis Dashboard</h3>
-                        <p class="project-desc">An interactive CTQ/CTP monitoring dashboard with visual counts, error-proofing summaries, and date-based style filtering.</p>
+                        <p class="project-desc">An interactive CTQ/CTP monitoring dashboard with visual counts,
+                            error-proofing summaries, and date-based style filtering.</p>
                         <div class="project-tech">
-                             <span class="tech-tag">Power BI</span>
+                            <span class="tech-tag">Power BI</span>
                             <span class="tech-tag">DAX</span>
                             <span class="tech-tag">M</span>
                             <span class="tech-tag">Sharepoint List</span>
@@ -1249,16 +1374,19 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div> 
+
+                </div>
 
                 <div class="project-card">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80" alt="Data Visualization">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1770&q=80"
+                            alt="Data Visualization">
                     </div>
                     <div class="project-info">
                         <h3 class="project-title">Others</h3>
-                        <p class="project-desc">A collection of Power Apps and Power BI solutions developed to digitize workflows, automate data handling, and provide real-time visibility for operational decision-making.</p>
+                        <p class="project-desc">A collection of Power Apps and Power BI solutions developed to digitize
+                            workflows, automate data handling, and provide real-time visibility for operational
+                            decision-making.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Power App/BI</span>
                             <span class="tech-tag">Power FX/M</span>
@@ -1269,8 +1397,8 @@
                         <div class="project-links">
                         </div>
                     </div>
-                   
-                </div> 
+
+                </div>
 
             </div>
         </div>
@@ -1347,9 +1475,11 @@
         <div class="container">
             <div class="social-links">
                 <a href="https://github.com/SupuniUdeshika" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/supuni-udeshika-51a6ba2a4/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.linkedin.com/in/supuni-udeshika-51a6ba2a4/" class="social-link"><i
+                        class="fab fa-linkedin"></i></a>
                 <a href="https://wa.me/+94760847704" class="social-link"><i class="fab fa-whatsapp"></i></a>
-                <a href="https://www.instagram.com/supuniudeshika/" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/supuniudeshika/" class="social-link"><i
+                        class="fab fa-instagram"></i></a>
             </div>
             <p>&copy; 2025 Supuni Udeshika. All rights reserved.</p>
         </div>
@@ -1357,12 +1487,12 @@
 
     <script>
         // Initialize EmailJS with your public key
-        (function() {
+        (function () {
             emailjs.init("qujT13nbdHwOzZ2Vf"); // Replace with your actual EmailJS public key
         })();
 
         // Typing effect
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const texts = [
                 "Passionate about clean code and innovative solutions",
                 "Aspiring Full Stack Developer skilled in web apps, databases, and Power Platform",
@@ -1372,10 +1502,10 @@
             let charIndex = 0;
             const typingElement = document.querySelector('.typing-text');
             let isDeleting = false;
-            
+
             function type() {
                 const currentText = texts[textIndex];
-                
+
                 if (isDeleting) {
                     typingElement.textContent = currentText.substring(0, charIndex - 1);
                     charIndex--;
@@ -1383,7 +1513,7 @@
                     typingElement.textContent = currentText.substring(0, charIndex + 1);
                     charIndex++;
                 }
-                
+
                 if (!isDeleting && charIndex === currentText.length) {
                     isDeleting = true;
                     setTimeout(type, 2000);
@@ -1395,16 +1525,16 @@
                     setTimeout(type, isDeleting ? 50 : 100);
                 }
             }
-            
+
             setTimeout(type, 1000);
-            
+
             // Smooth scrolling for navigation links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
                     e.preventDefault();
                     const targetId = this.getAttribute('href');
                     if (targetId === '#') return;
-                    
+
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
                         targetElement.scrollIntoView({
@@ -1421,25 +1551,25 @@
             const submitBtn = document.getElementById('submit-btn');
             const submitText = document.getElementById('submit-text');
             const loadingSpinner = document.getElementById('loading-spinner');
-            
-            contactForm.addEventListener('submit', function(e) {
+
+            contactForm.addEventListener('submit', function (e) {
                 e.preventDefault();
-                
+
                 // Hide previous messages
                 successMessage.style.display = 'none';
                 errorMessage.style.display = 'none';
-                
+
                 // Show loading state
                 submitText.textContent = 'Sending...';
                 loadingSpinner.style.display = 'inline-block';
                 submitBtn.disabled = true;
-                
+
                 // Get form data
                 const name = document.getElementById('name').value;
                 const email = document.getElementById('email').value;
                 const subject = document.getElementById('subject').value;
                 const message = document.getElementById('message').value;
-                
+
                 // Send email using EmailJS
                 emailjs.send("service_gkluirk", "template_u3z3bmh", {
                     from_name: name,
@@ -1448,49 +1578,43 @@
                     message: message,
                     to_email: "hmsupuniudeshika@gmail.com"
                 })
-                .then(function(response) {
-                    console.log('SUCCESS!', response.status, response.text);
-                    
-                    // Show success message
-                    successMessage.style.display = 'block';
-                    
-                    // Reset form
-                    contactForm.reset();
-                    
-                    // Reset button state
-                    submitText.textContent = 'Send Message';
-                    loadingSpinner.style.display = 'none';
-                    submitBtn.disabled = false;
-                    
-                    // Hide success message after 5 seconds
-                    setTimeout(() => {
-                        successMessage.style.display = 'none';
-                    }, 5000);
-                }, function(error) {
-                    console.log('FAILED...', error);
-                    
-                    // Show error message
-                    errorMessage.style.display = 'block';
-                    
-                    // Reset button state
-                    submitText.textContent = 'Send Message';
-                    loadingSpinner.style.display = 'none';
-                    submitBtn.disabled = false;
-                    
-                    // Hide error message after 5 seconds
-                    setTimeout(() => {
-                        errorMessage.style.display = 'none';
-                    }, 5000);
-                });
+                    .then(function (response) {
+                        console.log('SUCCESS!', response.status, response.text);
+
+                        // Show success message
+                        successMessage.style.display = 'block';
+
+                        // Reset form
+                        contactForm.reset();
+
+                        // Reset button state
+                        submitText.textContent = 'Send Message';
+                        loadingSpinner.style.display = 'none';
+                        submitBtn.disabled = false;
+
+                        // Hide success message after 5 seconds
+                        setTimeout(() => {
+                            successMessage.style.display = 'none';
+                        }, 5000);
+                    }, function (error) {
+                        console.log('FAILED...', error);
+
+                        // Show error message
+                        errorMessage.style.display = 'block';
+
+                        // Reset button state
+                        submitText.textContent = 'Send Message';
+                        loadingSpinner.style.display = 'none';
+                        submitBtn.disabled = false;
+
+                        // Hide error message after 5 seconds
+                        setTimeout(() => {
+                            errorMessage.style.display = 'none';
+                        }, 5000);
+                    });
             });
         });
     </script>
 </body>
 
 </html>
-
-
-
-
-
-
